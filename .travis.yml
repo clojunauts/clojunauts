@@ -1,0 +1,8 @@
+before_script:
+  - export COUCHDB_SERVER="http://localhost:5984"
+  - export COUCHDB_DB="test"
+
+language: clojure
+lein: lein2
+services:
+  - couchdb
