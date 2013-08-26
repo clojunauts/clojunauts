@@ -5,7 +5,7 @@
 
 (deftest server-is-up
   (let [app (system/start
-             (system/app))
+             (system/app {}))
         opts (:server-opts app)
         url (str "http://" (:host opts) ":" (:port opts))]
     (is (client/get url {:throw-exceptions false}))

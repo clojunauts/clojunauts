@@ -2,8 +2,8 @@
   (:require
    [ring.adapter.jetty :as jetty]))
 
-(defn app [& {:keys [host port join?]
-              :or {host "localhost" port 8080 join? false}}]
+(defn app [{:keys [host port join?]
+            :or {host "localhost" port 8080 join? false}}]
   "Returns an instance of a Clojunauts app."
   {:server-opts {:host host :port port :join? join?}})
 
