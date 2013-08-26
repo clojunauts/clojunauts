@@ -17,6 +17,6 @@
   :source-paths ["src/clj"]
 
   :uberjar-name "clojunauts-standalone.jar"
-  :main clojurians.app
+  :main clojunauts.app
 
   :aot :all)
