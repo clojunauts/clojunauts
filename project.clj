@@ -11,13 +11,16 @@
                  [clojureql "1.0.4"]
                  [clojunauts/postgresql "9.2-1003.jdbc4"]
                  [clojunauts/postgis-jdbc "2.1.0SVN"]
-                 [environ "0.4.0"]]
+                 [environ "0.4.0"]
+                 [lobos "1.0.0-beta1"]]
 
   :profiles {:dev {:dependencies [[org.clojure/tools.namespace "0.2.4"]
                                   [clj-http "0.7.6"]]
                    :source-paths ["dev"]}}
 
   :source-paths ["src/clj"]
+
+  :plugins [[lein-lobos "1.0.0-beta1"]]
 
   :uberjar-name "clojunauts-standalone.jar"
   :main clojunauts.app
