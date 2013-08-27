@@ -1,4 +1,4 @@
-(ns clojurians.database
+(ns clojunauts.database
   (:require [environ.core :refer [env]]))
 
 (def db
