@@ -8,7 +8,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [ring/ring-core "1.1.8"]
                  [ring/ring-jetty-adapter "1.1.8"]
-                 [clojureql "1.0.4"]
+                 [korma "0.3.0-RC5"]
                  [clojunauts/postgresql "9.2-1003.jdbc4"]
                  [clojunauts/postgis-jdbc "2.1.0SVN"]
                  [environ "0.4.0"]]
